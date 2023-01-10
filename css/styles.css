@@ -57,6 +57,30 @@ p{
 	font-size: 1.6rem;
 	line-height: 1.8;
 }
+section{
+	min-width: 37rem;
+	padding: 1.6rem;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.section__titulo{
+	font-size: 4.8rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+	text-align: center;
+}
+.section_titulo--destaque{
+	color: var(--clr-medium-green);
+}
+@media screen and (min-width:1170px) {
+	section{
+		padding: 1.6rem calc((100% - 117rem - 1.6rem)/2);
+	}
+}
 
 /**********************************/
 /* 2. Navbar
@@ -143,12 +167,6 @@ p{
 		color: var(--clr-medium-green);
 	}
 }
-@media screen and (min-width:1170px) {
-	.navbar{
-		padding:.8rem calc((100% -117rem - 1.6rem)/2);
-
-	}
-}
 
 /**********************************/
 /* 3. Hero
@@ -207,16 +225,45 @@ p{
 		font-size: 6.4rem;
 	}
 }
-@media screen and (min-width:1170px) {
+/*@media screen and (min-width:1170px) {
 	.hero-texto{
 		padding:1.6rem calc((100% -117rem - 1.6rem)/2);
 
 	}
 }
+*/
 /**********************************/
 /* 4. Sobre Nós
 /**********************************/
-
+.sobre-texto{
+	margin-top: 1.6rem;
+}
+.sobre-texto__titulo{
+	font-size: 2.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: .8rem;
+}
+@media screen and (min-width: 768px) {
+	.sobre-c{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.sobre-texto{
+		flex: 6 1 1rem;
+		margin-left: 1.5rem;
+	}
+	.sobre-c__img{
+		flex: 1 1 1rem;
+		margin-right: 1.5rem;
+	}
+}
+@media screen and (min-width:960px) {
+	.sobre{
+		height: 100vh;
+	}
+}
 
 
 /**********************************/
