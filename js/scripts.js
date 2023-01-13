@@ -55,6 +55,7 @@ const _elements = {
 
 let _sliderCounter = 0, _touchStart, _touchEnd;
 
+_elements.date.innerHTML = new Date().getFullYear() + ".";
 _elements.scrollLinks.forEach(link => {
 
 });
