@@ -57,7 +57,18 @@ let _sliderCounter = 0, _touchStart, _touchEnd;
 
 _elements.date.innerHTML = new Date().getFullYear() + ".";
 _elements.scrollLinks.forEach(link => {
+	link.addEventListener("click", e => {
+		const id= link.getAttribute("href");
+		const element = document.querySelector(id);
+		const position = element.offsetTop - 62;
 
+		window.scrollTo({
+			top: position,
+			behavior: "smooth"
+		});
+
+		e.preventDefault();
+	});
 });
 
 _elements.toggle.addEventListener("click", () => {
